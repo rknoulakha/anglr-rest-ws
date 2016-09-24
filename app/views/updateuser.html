@@ -1,0 +1,24 @@
+<div class="jumbotron">
+<table  class="table">
+<tr>
+	<td>Id</td>
+	<td><input class="form-control" type="text" name="id" ng-model="id"></input></td>
+	<td><button class="btn btn-default" ng-click="viewSingleUserFunc()">Search User</button></td>
+</tr>	
+</table>
+<div ng-hide="hideMe">
+<table  class="table">
+<tr><td>Name</td><td><input class="form-control" type="text"  name="name" ng-model="name" ng-value="myName"/></td></tr>
+<tr><td>Profession</td><td><input class="form-control" type="text"  name="profession" ng-model="profession" ng-value="myProfession"/></td></tr>
+<tr><td>DOJ</td><td><input class="form-control" type="text"  name="doj" ng-model="doj" ng-value="mydoj"/></td></tr>
+<tr><td>Country</td><td><input class="form-control" type="text"  name="country" ng-model="country" ng-value="myCountry"/></td></tr>
+<tr><td>State</td><td><input class="form-control" type="text"  name="state" ng-model="state" ng-value="myState"/></td></tr>
+<tr><td>City</td><td><input class="form-control" type="text"  name="city" ng-model="city" ng-value="myCity"/></td></tr>
+<tr><td>Pincode</td><td><input class="form-control" type="text"  name="pincode" ng-model="pincode" ng-value="myPincode"/></td></tr>
+<tr><td><button  class="btn btn-default" ng-click="updateUserFunc()">Update</button></td><td></td></tr>	
+</table>
+</div>
+</div>
+
+
+

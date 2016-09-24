@@ -1,0 +1,39 @@
+<div class="jumbotron">
+<table  class="table">
+<tr>
+	<td>Id</td>
+	<td><input class="form-control" type="text" name="id" ng-model="id"></input></td>
+	<td><button class="btn btn-default" ng-click="viewSingleUserFunc()">Show User</button></td>
+</tr>	
+</table>
+<div ng-hide="hideMe" class="container">
+<table  class="table">
+<thead>
+    <tr>
+    <th>Id</th>
+		<th>Name</th>
+		<th>Profession</th>
+		<th>DOJ</th>
+		<th>Country</th>
+		<th>State</th>
+		<th>City</th>
+		<th>Zip Code</th>
+    </tr>
+</thead>
+    <tbody>
+     <tr>
+			<td>{{userdata.id}}</td>
+			<td>{{userdata.name}}</td>
+			<td>{{userdata.profession}}</td>
+			<td>{{userdata.doj}}</td>
+			<td>{{userdata.address.country}}</td>
+			<td>{{userdata.address.state}}</td>
+			<td>{{userdata.address.city}}</td>
+			<td>{{userdata.address.pincode}}</td>
+		</tr>
+ 		</tbody>
+</table>	
+</div>
+</div>
+
+

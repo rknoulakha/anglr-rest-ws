@@ -1,0 +1,33 @@
+<div class="jumbotron">
+<button class="btn btn-default"  ng-click="viewUserFunc()">{{buttonText}}</button>
+<div class="container">
+<table ng-hide="hideMe"  class="table">
+<thead>
+    <tr>
+    <th>Id</th>
+		<th>Name</th>
+		<th>Profession</th>
+		<th>DOJ</th>
+		<th>Country</th>
+		<th>State</th>
+		<th>City</th>
+		<th>Zip Code</th>
+    </tr>
+</thead>
+    <tbody>
+     <tr ng-repeat="pr in listUsers">
+			<td>{{pr.id}}</td>
+			<td>{{pr.name}}</td>
+			<td>{{pr.profession}}</td>
+			<td>{{pr.doj}}</td>
+			<td>{{pr.address.country}}</td>
+			<td>{{pr.address.state}}</td>
+			<td>{{pr.address.city}}</td>
+			<td>{{pr.address.pincode}}</td>
+		</tr>
+ 		</tbody>
+</table>	
+</div>
+</div>
+
+
