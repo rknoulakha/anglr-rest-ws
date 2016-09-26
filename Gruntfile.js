@@ -438,8 +438,8 @@ module.exports = function (grunt) {
     },
     pages: {
       options: {
-        remote: 'git@github.com:rknoulakha1/AngularSetup.git',
-        branch: 'gh-pages'
+        remote: 'git@github.com:rknoulakha/anglr-rest-ws.git',
+        branch: 'deploy'
       }
     },
     heroku: {
