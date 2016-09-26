@@ -444,7 +444,7 @@ module.exports = function (grunt) {
     },
     heroku: {
       options: {
-        remote: 'git@heroku.com:anglr-demo.git',
+        remote: 'git@heroku.com:anglr-rest.git',
         branch: 'master',
         tag: pkg.version
       }
