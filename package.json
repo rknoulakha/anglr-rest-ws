@@ -42,15 +42,5 @@
   "dependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/rknoulakha1/AngularSetup.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/rknoulakha1/AngularSetup/issues"
-  },
-  "homepage": "https://gitlab.com/rknoulakha1/AngularSetup#README"
+  }
 }
