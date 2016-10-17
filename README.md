@@ -55,26 +55,10 @@ pages: {
       }
     },
 	
-We need to define the task as well for the pages need to remove some task because it is also copying the node_module on git which is not recommended.
+Note : We need to check it is copying the node_module on git gh-pages branch which is not recommended.
 
 	
-	    grunt.registerTask('pages', [
-   'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concurrent:dist',
-    'postcss',
-    'ngtemplates',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
-  ]);
+
 
 ****************************************************************************************************
 	
