@@ -510,28 +510,17 @@ module.exports = function (grunt) {
   ]);
   
     grunt.registerTask('pages', [
-   'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concurrent:dist',
-    'postcss',
-    'ngtemplates',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+   'newer:jshint',
+    'newer:jscs',
+    'test',
+    'build'
   ]);
 
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
     'test',
-    'build',
+    'build'
 	
   ]);
 };
