@@ -19,8 +19,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn',
-	customTasksDir: 'dist'
+    cdnify: 'grunt-google-cdn'
   });
   
   
