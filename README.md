@@ -14,9 +14,9 @@ How to import the node project in eclipse.
 1. npm install -g nodeclipse // Globally  Install
 2. nodeclipse -g // Locally install settings in your project, now you need to import the project only.
 
---------------------------------------------------------------------
+-------------------- Deploy Project on Heroku and Git ---------------
 
-How to deploy on production or minimize the code.
+How to deploy on production/heroku or minimize the code.
 
 1. Once you are done with the above steps able to run the code in local you can run the following command.
 
@@ -34,33 +34,13 @@ congratulation you are done with this. You can access your project in following 
 
 https://rknoulakha.github.io/anglr-rest-ws/			
 			
-			
-****************************************************************************************************
+3. run the command 
 
-Note : We are using here https instead of ssh so we need to give the user-name/password in the file not a recommended way.
-
-Grunt file : 
-
-pages: {
-      options: {
-        remote: 'https://git-username:git-password@github.com/rknoulakha/anglr-rest-ws.git',   // git url of the project with username and password
-        branch: 'gh-pages'     // Branch will create in git hub which have only dist code.
-      }
-    },
-    heroku: {
-      options: {
-        remote: 'https://git.heroku.com/anglr-rest-ws.git', // Git URL for Heroku 
-        branch: 'master',
-        tag: pkg.version
-      }
-    },
-	
-Note : We need to check it is copying the node_module on git gh-pages branch which is not recommended.
-
-	
-
-
-****************************************************************************************************
+1. heroku login
+2. heroku create <ul name>
+3. grunt buildcontrol : heroku
+4. heroku open
+		
 	
 			
 
