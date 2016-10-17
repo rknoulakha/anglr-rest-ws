@@ -30,17 +30,25 @@ How to deploy on production/heroku or minimize the code.
           
             It will create a new branch in your git hub which have only dist folder.
 
-congratulation you are done with this. You can access your project in following url. <git-user-name>.github.io/project-name
+congratulation you are done with this. You can access your project in following url. git-user-name.github.io/project-name
 
 https://rknoulakha.github.io/anglr-rest-ws/			
 			
 3. run the command 
 
 1. heroku login
-2. heroku create <ul name>
+2. heroku create url-name
 3. grunt buildcontrol : heroku
 4. heroku open
+
+If you face the problem while deploy then deploying it better using Heroku Website. Follow the below instruction :
+Personal apps : Go to your app : Deploy : Select GitHub on deployment method : Configure/Connect your app  with your Git URL and Path. 
+You can automatically deploy your app or choose manually (for mnually click Deploy Branch). In this project I'm using gh-pages branch.
+
+-------------------- URL of GIT and Heroku ---------------
 		
+eg : https://anglr-rest-ws.herokuapp.com
+	 https://rknoulakha.github.io/anglr-rest-ws
 	
 			
 
