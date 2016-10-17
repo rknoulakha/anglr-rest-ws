@@ -438,7 +438,7 @@ module.exports = function (grunt) {
     },
     pages: {
       options: {
-        remote: 'https://github.com/rknoulakha/anglr-rest-ws.git',   
+        remote: 'https://rknoulakha:rohit%40#101022@github.com/rknoulakha/anglr-rest-ws.git',   
         branch: 'deploy'
       }
     },
