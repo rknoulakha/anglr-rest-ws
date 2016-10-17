@@ -438,13 +438,13 @@ module.exports = function (grunt) {
     },
     pages: {
       options: {
-        remote: 'git@github.com:rknoulakha/anglr-rest-ws.git',   
+        remote: 'https://github.com/rknoulakha/anglr-rest-ws.git',   
         branch: 'deploy'
       }
     },
     heroku: {
       options: {
-        remote: 'git@heroku.com:anglr-rest.git',
+        remote: 'https://git.heroku.com/rknoulakha.git',
         branch: 'master',
         tag: pkg.version
       }
