@@ -446,7 +446,7 @@ module.exports = function (grunt) {
     },
     heroku: {
       options: {
-        remote: 'https://git.heroku.com/rknoulakha.git',
+        remote: 'https://git.heroku.com/anglr-rest-ws.git',
         branch: 'master',
         tag: pkg.version
       }
