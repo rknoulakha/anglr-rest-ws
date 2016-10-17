@@ -509,12 +509,7 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
   
-    grunt.registerTask('pages', [
-   'newer:jshint',
-    'newer:jscs',
-    'test',
-    'build'
-  ]);
+
 
   grunt.registerTask('default', [
     'newer:jshint',
