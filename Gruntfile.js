@@ -441,7 +441,7 @@ module.exports = function (grunt) {
     pages: {
       options: {
         remote: 'https://rknoulakha:rohit101022@github.com/rknoulakha/anglr-rest-ws.git',   
-        branch: 'deploy'
+        branch: 'gh-pages'
       }
     },
     heroku: {
@@ -510,9 +510,21 @@ module.exports = function (grunt) {
   ]);
   
     grunt.registerTask('pages', [
-    'clean:dist',
+   'clean:dist',
     'wiredep',
-    'useminPrepare'
+    'useminPrepare',
+    'concurrent:dist',
+    'postcss',
+    'ngtemplates',
+    'concat',
+    'ngAnnotate',
+    'copy:dist',
+    'cdnify',
+    'cssmin',
+    'uglify',
+    'filerev',
+    'usemin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
