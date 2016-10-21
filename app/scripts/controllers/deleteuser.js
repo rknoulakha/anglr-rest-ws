@@ -8,13 +8,14 @@ angular.module('myTestAppApp')
   
   
   
- function($scope, $http) {
+ function($scope, $http,$rootScope) {
 	$scope.deleteUserFunc = function() {
-		var url = 'http://localhost:8081/Rest_WS_Advanced_Maven/user/delete/';
-		url = url + ($scope.id);
 		
-		// Eclipse thinks delete and instanceof are bug that's why we are having red error symbol in js and alert is not display after delete.
 		
+		
+		
+		var url = ($rootScope.service_url)+'/delete/'+($scope.id);
+				
 		$http.delete(url).success(
 				function(data, status, headers, config) {
 					alert('Deleted Successfully :');

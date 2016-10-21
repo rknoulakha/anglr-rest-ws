@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('myTestAppApp').controller('ViewUserCtrl', function($scope, $http) {
+angular.module('myTestAppApp').controller('ViewUserCtrl', function($scope, $http, $rootScope) {
 	$scope.hideMe = true;
 	$scope.buttonText = 'Show';
 	$scope.viewUserFunc = function() {
@@ -16,9 +16,9 @@ angular.module('myTestAppApp').controller('ViewUserCtrl', function($scope, $http
 			$scope.buttonText = 'Show';
 		}
 		
-	
+	var url = ($rootScope.service_url);
 		
-		$http.get('http://localhost:8081/Rest_WS_Advanced_Maven/user').success(function(response) 
+		$http.get(url).success(function(response) 
 		{
 				
 					$scope.listUsers = response;

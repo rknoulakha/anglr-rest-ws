@@ -4,7 +4,7 @@
 angular.module('myTestAppApp') .controller('InsertUserCtrl', 
   
   
-function($scope, $http) {
+function($scope, $http, $rootScope) {
 	$scope.saveUserFunc = function() {
 		var user = {
 			"name" : $scope.name,
@@ -18,13 +18,17 @@ function($scope, $http) {
 		};
 
 		var userString = JSON.stringify(user, null, '');
+		
 	
 		var config = {
 			headers : {
 				'Content-Type' : 'application/json'
 			}
 		}
-$http.post('http://localhost:8081/Rest_WS_Advanced_Maven/user/insert', userString,
+		
+		var url = ($rootScope.service_url)+'/insert';
+		
+$http.post(url, userString,
 				config).success(function(data, status, headers, config) {
 			alert('Save Successfully :');
 			

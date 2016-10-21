@@ -10,6 +10,7 @@ angular .module('myTestAppApp', [
     'ngTouch'
   ])
   .config(function ($routeProvider) {
+	
     $routeProvider
       
       .when('/', {

@@ -2,7 +2,7 @@
 
 
 angular.module('myTestAppApp')
-  .controller('HomeCtrl', function () {
+  .controller('HomeCtrl', function ($scope,$rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

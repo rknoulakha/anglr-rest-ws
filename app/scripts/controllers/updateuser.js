@@ -6,14 +6,17 @@ angular.module('myTestAppApp')
   
   
   
-function($scope, $http) {
+function($scope, $http, $rootScope) {
 	
 	$scope.hideMe = true;	
 	$scope.viewSingleUserFunc = function() 
 	{
 	$scope.hideMe = false;
-	var url="http://localhost:8081/Rest_WS_Advanced_Maven/user/";
-	url = url + ($scope.id);
+	
+	var url = ($rootScope.service_url)+'/'+($scope.id);
+	
+	
+ 
 	$http.get(url).then(function(response) 
 	{
 	$scope.name = response.data.name;
@@ -47,8 +50,10 @@ $scope.updateUserFunc = function() {
 				'Content-Type' : 'application/json'
 			}
 		}
-		var url = 'http://localhost:8081/Rest_WS_Advanced_Maven/user/update/';
-		url = url + ($scope.id);
+		
+		var url = ($rootScope.service_url) +'/update/'+ ($scope.id);
+		
+	
 	
 		$http.put(url, userString, config).success(
 				function(data, status, headers, config) {
